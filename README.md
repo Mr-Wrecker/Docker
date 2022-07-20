@@ -12,6 +12,14 @@ Docker Project For Cloud Computing Course
 
 ## How To Setup
 
+#### Get Project
+
+```console
+➜ git clone https://github.com/Mr-Wrecker/Docker.git
+
+➜ cd Docker
+```
+
 ### First Step: Pull Requirements Docker Image
 
 ```console
@@ -30,8 +38,32 @@ Docker Project For Cloud Computing Course
 
 #### Start Containers
 
+```console
+➜ sudo bash Service/Start-Containers.sh
+```
+
 #### Stop Containers
 
 ```console
 ➜ sudo bash Service/Stop-Containers.sh
+```
+
+---
+
+## Usage
+
+### For Read Data From Redis Database
+
+#### Read Service Listen on 8000 Port
+
+```console
+➜ curl localhost:8000
+```
+
+### For Write Data To Redis Database
+
+#### Write Service Listen on 8080 Port
+
+```console
+➜ curl "localhost:8080?name=Your_Name"
 ```
